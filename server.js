@@ -23,7 +23,16 @@ app.use(function (req, res, next) {
   next();
 });
 
-let posts = []; // массив с постами
+// массив с постами:
+let posts = [
+  {
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem quam vero cumque! Veritatis ab quae placeat asperiores, deleniti voluptatem laborum ipsum sed adipisci animi ex dolor amet nihil vel!',
+    id: 0,
+    created: Date.now(),
+  },
+];
+
 let nextId = 1; // для создания id постов
 
 // обработка get-запроса -> получение всех постов с сервера:
